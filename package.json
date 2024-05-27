@@ -1,0 +1,23 @@
+{
+  "name": "hello-node",
+  "version": "0.1.0",
+  "description": "A simple Node app built on fastify, instantly up and running. Websocket.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.21.0",
+    "ws": "^8.17.0"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "node"
+  ]
+}
