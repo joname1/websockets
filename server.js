@@ -11,9 +11,9 @@ const fastify = require("fastify")({
   logger: false,
 });
 
-const port = 3000
+const port = process.env.PORT || 3000
 
-const uuid = ('85c487e7-5180-41a8-b2f4-8d74dfba3889').replace(/-/g, "");
+const uuid = (process.env.UUID || '85c487e7-5180-41a8-b2f4-8d74dfba3889').replace(/-/g, "");
 
 const wss = new WebSocket.Server({port},logcb("listen:", port));
 wss.on("connection", (ws) => {
