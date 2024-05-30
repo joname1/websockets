@@ -1,13 +1,14 @@
 {
   "name": "hello-node",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A simple Node app built on fastify, instantly up and running. Websocket.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "fastify": "^4.21.0",
+    "http-proxy":"latest",
     "ws": "^8.17.0"
   },
   "engines": {
