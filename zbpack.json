@@ -1,3 +1,4 @@
 {
-  "serverless": true
+  "serverless": true,
+  "start_command": "npm run start"
 }
