@@ -1,12 +1,9 @@
-// const path = require("path");
-// const net = require("net");
-// const http = require("http");
 // const fastify = require("fastify")({
 //   logger: false,
 // });
 
 // fastify.get("/", function (request, reply) {
-//   reply.code(200).send({ hello: '200' })
+//   reply.code(200).send({ hello: '2009999' })
 // });
 
 // fastify.listen(
@@ -33,4 +30,4 @@ app.get('/', ((req, res) => {
   res.send('Forbidden!')
 }));
 
-app.listen(3000, ()=> { console.log('Your app is listening on 3000') })
+app.listen(process.env.PORT || 3000, ()=> { console.log('Your app is listening on 3000') })
