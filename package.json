@@ -9,6 +9,8 @@
   "dependencies": {
     "fastify": "^4.21.0",
     "http-proxy":"latest",
+    "express":"latest",
+    "express-http-proxy":"latest",
     "ws": "^8.17.0"
   },
   "engines": {
