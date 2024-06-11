@@ -7,8 +7,6 @@ const port = process.env.PORT || 3000
 
 const uuid = (process.env.UUID || '85c487e7-5180-41a8-b2f4-8d74dfba3889').replace(/-/g, "");
 
-console.log("connection: ", 'vless://8328a0bd-2190-4c44-afc4-09799f26a977@REPLACE_ME:443?encryption=none&security=tls&sni=REPLACE_ME&type=ws&host=REPLACE_ME&path=/#zeabur6');
-
 const wss = new WebSocket.Server({port},logcb("listen:", port));
 wss.on("connection", (ws) => {
   //console.log("connection: ", new Date());
