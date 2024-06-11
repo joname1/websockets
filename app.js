@@ -20,17 +20,17 @@
 //   }
 // );
 
-const proxy = require('express-http-proxy');
 const express = require('express');
+const proxy = require('express-http-proxy');
 
 const app = express();
 
-let URL = 'trail-grove-frown.glitch.me'
+let URL = 'http://trail-grove-frown.glitch.me'
 
 app.use('/glitch', proxy(URL));
 
 app.get('/', ((req, res) => {
-  res.end('Forbidden');
+  res.send('Forbidden!')
 }));
 
 app.listen(3000, ()=> { console.log('Your app is listening on 3000') })
